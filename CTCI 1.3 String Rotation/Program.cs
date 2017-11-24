@@ -10,6 +10,8 @@ namespace CTCI_1._3_String_Rotation
     {
         static void Main(string[] args)
         {
+            PrintHeaderMsg(1, 3, "String Rotation");
+
             string string1 = "Sesquipedalian";
             string string2 = "quail";
             string string3 = "Xerox";
@@ -20,6 +22,13 @@ namespace CTCI_1._3_String_Rotation
             contains_dotnet(string1, string4);
 
             Console.ReadLine();
+        }
+
+        private static void PrintHeaderMsg(int chapter, int problem, string title)
+        {
+            Console.WriteLine("Cracking the Coding Interview");
+            Console.WriteLine("Chapter " + chapter + ", Problem " + chapter + "." + problem + ": " + title);            
+            Console.WriteLine();
         }
 
         private static void contains_dotnet(string string1, string string2)
